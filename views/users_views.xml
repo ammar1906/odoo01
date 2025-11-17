@@ -8,8 +8,8 @@
             <form string="user informations">
                 <sheet>
                     <group>
-                        <field name="name"/>
-                                                        <field name="tools_count"/>
+                        <field name="name" class="bg-light"/>
+                        <field name="tools_count"/>
 
                     </group>
 
