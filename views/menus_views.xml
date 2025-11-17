@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <menuitem id="train_dz_menu_root"  name="training ground" sequence="-10"/>
+
+    <menuitem id="users_menu" name="users" action="train_user_action" parent="train_dz_menu_root" sequence="1"/>
+        <menuitem id="tools_menu" name="tools" action="train_tools_action" parent="train_dz_menu_root" sequence="2"/>
+
+
+</odoo>

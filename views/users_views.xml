@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="train_user_view_from" model="ir.ui.view">
+        <field name="name">train.user.form</field>
+        <field name="model">train.user</field>
+        <field name="arch" type="xml">
+            <form string="user informations">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                                                        <field name="tools_count"/>
+
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="train_user_view_list" model="ir.ui.view">
+        <field name="name">train.user.list</field>
+        <field name="model">train.user</field>
+        <field name="arch" type="xml">
+            <list string="user informations">
+
+
+                        <field name="name"/>
+                        <field name="tool_id"/>
+                        <field name="tools_count"/>
+
+
+            </list>
+        </field>
+    </record>
+
+
+    <record id="train_user_action" model="ir.actions.act_window">
+        <field name="name">action user</field>
+        <field name="res_model">train.user</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+</odoo>
